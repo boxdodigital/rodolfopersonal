@@ -30,7 +30,7 @@
       radial-gradient(circle at 90% 80%, rgba(226,71,44,0.05), transparent 45%);
   }
   .wrap{ max-width: 620px; margin: 0 auto; padding: 0 20px 80px; }
- 
+
   /* HERO */
   .hero{ padding: 48px 0 32px; text-align:center; }
   .eyebrow{
@@ -48,7 +48,7 @@
   .coach{ display:flex; align-items:center; justify-content:center; gap:10px; margin-top:24px; }
   .coach-dot{ width:8px; height:8px; border-radius:50%; background:var(--gold); }
   .coach-name{ font-family:Arial,Helvetica,sans-serif; font-stretch:condensed; letter-spacing:0.3px; font-size:13px; font-weight:700; color:var(--muted); text-transform:uppercase; }
- 
+
   /* CARD */
   .card{
     background: var(--bg-card);
@@ -67,7 +67,7 @@
     font-family:Arial,Helvetica,sans-serif; font-stretch:condensed; letter-spacing:1.5px; font-size:14px;
     color:var(--gold); text-transform:uppercase; margin-bottom:18px; font-weight:600;
   }
- 
+
   /* FORM */
   .field{ margin-bottom: 18px; }
   .field label{ display:block; font-size:13px; color:var(--muted); margin-bottom:8px; }
@@ -78,7 +78,7 @@
   }
   .field input:focus, .field select:focus{ outline:none; border-color: var(--gold); }
   .row2{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
- 
+
   .toggle-group{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
   .toggle{
     background: var(--bg-card-2); border:1px solid var(--line); border-radius:10px;
@@ -86,7 +86,7 @@
     font-size:14px; font-weight:500;
   }
   .toggle.active{ border-color: var(--gold); background: rgba(217,164,65,0.22); color: var(--gold-bright); }
- 
+
   .btn{
     width:100%; background: linear-gradient(90deg, var(--green), var(--green-bright));
     color: var(--white); border:none; padding:16px; border-radius:10px;
@@ -96,12 +96,12 @@
   }
   .btn:hover{ transform: translateY(-1px); }
   .btn:active{ transform: translateY(0); }
- 
+
   @keyframes pulse-glow{
     0%, 100% { box-shadow: 0 0 0 0 rgba(63,165,101,0.55); }
     50% { box-shadow: 0 0 0 10px rgba(63,165,101,0); }
   }
- 
+
   /* RESULT */
   #result-section{ display:none; }
   .silhouette{ display:flex; justify-content:center; margin: 6px 0 20px; }
@@ -112,13 +112,13 @@
   }
   .result-box .num{ font-family:Arial,Helvetica,sans-serif; font-stretch:condensed; letter-spacing:0.3px; font-size:30px; font-weight:700; color: var(--gold-bright); }
   .result-box .lbl{ font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px; }
- 
+
   .disclaimer{
     background: rgba(10,10,10,0.4); border:1px solid rgba(226,71,44,0.55);
     border-radius:12px; padding:16px; font-size:13px; color: var(--white); margin-top:16px;
   }
   .disclaimer b{ color: #ff8a6e; }
- 
+
   /* CHECKLIST */
   #checklist-section{ display:none; }
   .check-item{
@@ -132,7 +132,7 @@
   }
   .check-text b{ display:block; font-size:14.5px; margin-bottom:2px; }
   .check-text span{ font-size:13px; color:var(--muted); }
- 
+
   /* CTA */
   .cta-card{
     background: linear-gradient(160deg, #1c1712, var(--bg-card));
@@ -151,9 +151,9 @@
     animation: pulse-glow 2s ease-in-out infinite;
   }
   .fine{ font-size:11.5px; color:var(--muted); margin-top:14px; }
- 
+
   footer{ text-align:center; color:var(--muted); font-size:12px; margin-top:30px; }
- 
+
   /* QUALIFICATIONS */
   .qual-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px; }
   .qual-item{
@@ -164,7 +164,7 @@
   .qual-text{ font-size:13px; color: var(--white); }
   .qual-text b{ display:block; font-size:13.5px; margin-bottom:2px; }
   .qual-text span{ font-size:11.5px; color:var(--muted); }
- 
+
   /* TESTIMONIALS */
   .testi-scroll{
     display:flex; gap:14px; overflow-x:auto; padding: 4px 2px 10px; margin-top:14px;
@@ -188,7 +188,7 @@
 </head>
 <body>
 <div class="wrap">
- 
+
   <div class="hero">
     <div class="eyebrow">Ferramenta Gratuita</div>
     <h1>Descubra sua <span>composição corporal</span> em 30 segundos</h1>
@@ -198,7 +198,7 @@
       <div class="coach-name">Rodollfo Freire · Personal Trainer</div>
     </div>
   </div>
- 
+
   <!-- QUALIFICATIONS -->
   <div class="card" id="qual-section">
     <div class="step-label">Quem vai analisar seus dados</div>
@@ -217,11 +217,11 @@
       </div>
     </div>
   </div>
- 
+
   <!-- STEP 1: FORM -->
   <div class="card" id="form-section">
     <div class="step-label">Passo 1 — Seus dados</div>
- 
+
     <div class="field">
       <label>Qual seu objetivo principal?</label>
       <div class="toggle-group">
@@ -229,7 +229,7 @@
         <div class="toggle" id="obj-hipertrofia" onclick="setObjective('hipertrofia')">Ganho de Massa</div>
       </div>
     </div>
- 
+
     <div class="field">
       <label>Sexo</label>
       <div class="toggle-group">
@@ -237,7 +237,7 @@
         <div class="toggle" id="sex-f" onclick="setSex('f')">Feminino</div>
       </div>
     </div>
- 
+
     <div class="row2">
       <div class="field">
         <label>Idade</label>
@@ -248,19 +248,19 @@
         <input type="number" id="height" placeholder="Ex: 175">
       </div>
     </div>
- 
+
     <div class="field">
       <label>Peso (kg)</label>
       <input type="number" id="weight" placeholder="Ex: 80">
     </div>
- 
+
     <button class="btn" onclick="calculate()">Calcular meu resultado</button>
   </div>
- 
+
   <!-- STEP 2: RESULT -->
   <div class="card" id="result-section">
     <div class="step-label">Passo 2 — Sua estimativa</div>
- 
+
     <div class="result-grid">
       <div class="result-box">
         <div class="num" id="bf-result">--%</div>
@@ -271,20 +271,20 @@
         <div class="lbl">Calorias/dia (TMB)</div>
       </div>
     </div>
- 
+
     <div class="disclaimer">
       <b>Isso é só uma estimativa por fórmula.</b> Ela não mede sua massa magra, água corporal ou gordura visceral — e pode variar bastante do seu número real. A avaliação de bioimpedância do Rodollfo mostra seus dados exatos, com precisão de equipamento profissional.
     </div>
- 
+
     <button class="btn" onclick="showChecklist()" style="margin-top:18px;">Ver meu plano de ação de 7 dias</button>
   </div>
- 
+
   <!-- STEP 3: CHECKLIST -->
   <div class="card" id="checklist-section">
     <div class="step-label" id="checklist-title">Passo 3 — Seus primeiros 7 dias</div>
     <div id="checklist-items"></div>
   </div>
- 
+
   <!-- STEP 4: CTA -->
   <div class="card cta-card" id="cta-section" style="display:none;">
     <h2>Quer seus números reais?</h2>
@@ -292,39 +292,39 @@
     <a class="cta-btn" href="https://wa.me/5516997603498?text=Oi%20Rodollfo!%20Fiz%20a%20calculadora%20de%20composi%C3%A7%C3%A3o%20corporal%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20de%20bioimped%C3%A2ncia." target="_blank">Agendar minha avaliação</a>
     <p class="fine">Vagas limitadas por semana para acompanhamento personalizado.</p>
   </div>
- 
+
   <footer>rodollfo.personaltrainer · Coach · Bacharel em Educação Física</footer>
 </div>
- 
+
 <script>
   let sex = 'm';
   let objective = 'emagrecimento';
- 
+
   function setSex(s){
     sex = s;
     document.getElementById('sex-m').classList.toggle('active', s==='m');
     document.getElementById('sex-f').classList.toggle('active', s==='f');
   }
- 
+
   function setObjective(o){
     objective = o;
     document.getElementById('obj-emagrecimento').classList.toggle('active', o==='emagrecimento');
     document.getElementById('obj-hipertrofia').classList.toggle('active', o==='hipertrofia');
   }
- 
+
   function calculate(){
     const age = parseFloat(document.getElementById('age').value);
     const height = parseFloat(document.getElementById('height').value);
     const weight = parseFloat(document.getElementById('weight').value);
- 
+
     if(!age || !height || !weight){
       alert('Preencha idade, altura e peso para continuar.');
       return;
     }
- 
+
     const heightM = height / 100;
     const bmi = weight / (heightM * heightM);
- 
+
     // Deurenberg formula (estimativa de % de gordura via IMC)
     let bf;
     if(sex === 'm'){
@@ -333,7 +333,7 @@
       bf = (1.20 * bmi) + (0.23 * age) - 5.4 - 10.8;
     }
     bf = Math.max(4, Math.min(bf, 50));
- 
+
     // Mifflin-St Jeor (TMB)
     let tmb;
     if(sex === 'm'){
@@ -341,14 +341,14 @@
     } else {
       tmb = (10 * weight) + (6.25 * height) - (5 * age) - 161;
     }
- 
+
     document.getElementById('bf-result').textContent = bf.toFixed(1) + '%';
     document.getElementById('tmb-result').textContent = Math.round(tmb);
- 
+
     document.getElementById('result-section').style.display = 'block';
     document.getElementById('result-section').scrollIntoView({behavior:'smooth', block:'start'});
   }
- 
+
   const checklists = {
     emagrecimento: {
       title: 'Passo 3 — Seus primeiros 7 dias para emagrecer',
@@ -375,11 +375,11 @@
       ]
     }
   };
- 
+
   function showChecklist(){
     const data = checklists[objective];
     document.getElementById('checklist-title').textContent = data.title;
- 
+
     const container = document.getElementById('checklist-items');
     container.innerHTML = '';
     data.items.forEach((item, i) => {
@@ -391,7 +391,7 @@
       `;
       container.appendChild(div);
     });
- 
+
     document.getElementById('checklist-section').style.display = 'block';
     document.getElementById('cta-section').style.display = 'block';
     document.getElementById('checklist-section').scrollIntoView({behavior:'smooth', block:'start'});
